@@ -1,0 +1,13 @@
+{
+  "id": "INC-2048",
+  "source": "amazon-cloudwatch",
+  "service": "api-gateway",
+  "metric": "p99_latency_ms",
+  "value": 2420,
+  "threshold": 2000,
+  "duration_minutes": 5,
+  "severity": "warning",
+  "affected_users": 4200,
+  "region": "us-east-1",
+  "detected_at": "2026-12-04T12:00:00Z"
+}

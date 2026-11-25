@@ -1,0 +1,20 @@
+{
+  "name": "microagent-core",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A dependency-free event engine powering two distinct production apps.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "demo": "npm run build --silent && node dist/scripts/demo.js",
+    "test": "npm run build --silent && node --test dist/tests/",
+    "lines": "node scripts/check-lines.mjs",
+    "deps": "node -e \"const d=require('./package.json').dependencies||{};if(Object.keys(d).length){console.error('runtime deps not allowed');process.exit(1)}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
